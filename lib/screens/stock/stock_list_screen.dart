@@ -24,7 +24,7 @@ class _StockListScreenState extends State<StockListScreen> {
   }
 
   void _charger() {
-    setState(() => _futur = _service.lister(recherche: _recherche.text));
+    setState(() { _futur = _service.lister(recherche: _recherche.text); });
   }
 
   Future<void> _ouvrirFormulaire([Produit? p]) async {
