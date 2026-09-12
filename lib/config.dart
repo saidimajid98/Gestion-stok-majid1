@@ -1,3 +1,2 @@
-// Renseignez vos identifiants Supabase ici (Project Settings > API).
-const supabaseUrl = 'https://VOTRE-PROJET.supabase.co';
-const supabaseAnonKey = 'VOTRE-CLE-ANON-PUBLIC';
+const supabaseUrl = 'https://sxtoguibytvhfkverjch.supabase.co';
+const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN4dG9ndWlieXR2aGZrdmVyamNoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg5ODUyODUsImV4cCI6MjEwNDU2MTI4NX0.I-TT5HJn9x-1OBoHHxDdRocO_99SUGyIzuTmv_OGtgY';
