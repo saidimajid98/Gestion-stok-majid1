@@ -22,7 +22,7 @@ class _ClientsListScreenState extends State<ClientsListScreen> {
     _charger();
   }
 
-  void _charger() => setState(() => _futur = _service.lister(recherche: _recherche.text));
+  void _charger() { setState(() { _futur = _service.lister(recherche: _recherche.text); }); }
 
   Future<void> _ouvrirFormulaire([Client? c]) async {
     await Navigator.of(context).push(MaterialPageRoute(builder: (_) => ClientFormScreen(client: c)));
