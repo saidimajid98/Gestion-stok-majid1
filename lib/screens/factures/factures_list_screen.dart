@@ -28,12 +28,12 @@ class _FacturesListScreenState extends State<FacturesListScreen> {
 
   Future<void> _ouvrirFormulaire() async {
     await Navigator.of(context).push(MaterialPageRoute(builder: (_) => const FactureFormScreen()));
-    _charger();
+    if (mounted) _charger();
   }
 
   Future<void> _ouvrirDetail(String id) async {
     await Navigator.of(context).push(MaterialPageRoute(builder: (_) => FactureDetailScreen(factureId: id)));
-    _charger();
+    if (mounted) _charger();
   }
 
   @override
