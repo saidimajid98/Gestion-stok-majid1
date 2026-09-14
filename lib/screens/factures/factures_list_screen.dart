@@ -24,7 +24,7 @@ class _FacturesListScreenState extends State<FacturesListScreen> {
     _charger();
   }
 
-  void _charger() => setState(() => _futur = _service.lister(recherche: _recherche.text));
+  void _charger() { setState(() { _futur = _service.lister(recherche: _recherche.text); }); }
 
   Future<void> _ouvrirFormulaire() async {
     await Navigator.of(context).push(MaterialPageRoute(builder: (_) => const FactureFormScreen()));
